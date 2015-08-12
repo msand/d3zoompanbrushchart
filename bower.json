@@ -6,7 +6,10 @@
     "name": "Mikael Sand",
     "url": "http://github.com/msand"
   },
-  "main": "d3zoompanbrushchart.js",
+  "main": [
+    "d3zoompanbrushchart.js",
+    "styles.css"
+  ],
   "scripts": [
     "d3zoompanbrushchart.js"
   ],
@@ -18,8 +21,13 @@
   ],
   "license": "BSD-3-Clause",
   "dependencies": {
-    "d3": "^3.4.4"
+    "d3": "3.*"
   },
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
   "ignore": [
     ".DS_Store",
     ".git",

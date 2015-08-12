@@ -4,7 +4,7 @@
 
 Package.describe({
   name: 'msand:d3zoompanbrushchart',
-  version: '1.0.1',
+  version: '1.0.2',
   summary: 'A minimal reusable chart with zoom, pan and brush for time series using d3.js',
   git: 'https://github.com/msand/d3zoompanbrushchart.git',
   documentation: 'README.md'

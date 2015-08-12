@@ -1,6 +1,6 @@
 {
   "name": "d3zoompanbrushchart",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A minimal reusable chart with zoom, pan and brush for time series using d3.js",
   "keywords": [
     "dom",
@@ -19,8 +19,22 @@
     "type": "git",
     "url": "https://github.com/msand/d3zoompanbrushchart"
   },
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "d3": "3.*"
+  },
+  "browserDependencies": {
+    "d3": "3.*"
+  },
+  "peerDependencies": {
+    "d3": "3.*"
+  },
   "main": "d3zoompanbrushchart.js",
   "browserify": "d3zoompanbrushchart.js",
+  "files": [
+    "d3zoompanbrushchart.js",
+    "styles.css"
+  ],
   "jspm": {
     "main": "d3zoompanbrushchart",
     "shim": {
@@ -29,7 +43,8 @@
       }
     },
     "files": [
-      "d3zoompanbrushchart.js"
+      "d3zoompanbrushchart.js",
+      "styles.css"
     ],
     "buildConfig": {
       "uglify": true

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>d3ZoomPanBrushChart - A minimal reusable chart with zoom, pan and brush for time series using d3.js</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <style type="text/css">
+        html,
+        body,
+        #container {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <p style="position: absolute; margin: 5px;">
+        d3ZoomPanBrushChart - A minimal reusable chart with zoom, pan and brush for time series using d3.js
+    </p>
+    <div id="container" class="d3zoompanbrushchart">
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+    <script src="d3zoompanbrushchart.js"></script>
+    <script>
+        var data =
+                [
+                    [
+                        {date: "1-May-14", value: "58.13", value2: "358.13"},
+                        {date: "30-Apr-13", value: "53.98", value2: "258.13"},
+                        {date: "27-Apr-12", value: "67.00", value2: "358.13"},
+                        {date: "26-Apr-11", value: "89.70", value2: "458.13"},
+                        {date: "25-Apr-10", value: "99.00", value2: "158.13"}
+                    ],
+                    [
+                        {date: "1-May-14", value: "58.13", value2: "258.13"},
+                        {date: "30-Apr-13", value: "83.98", value2: "358.13"},
+                        {date: "27-Apr-12", value: "127.00", value2: "358.13"},
+                        {date: "26-Apr-11", value: "189.70", value2: "458.13"},
+                        {date: "25-Apr-10", value: "199.00", value2: "558.13"}
+                    ]
+                ];
+
+        var parseDate = d3.time.format("%d-%b-%y").parse;
+        data.forEach(function (series) {
+            series.forEach(function (d) {
+                d.date = parseDate(d.date);
+                d.value2 = +d.value2;
+                d.value = +d.value;
+            })
+        });
+
+        function initChart() {
+            return d3ZoomPanBrushChart({data: data, parent: document.getElementById('container')});
+        }
+
+        d3.select(window).on('load', function () {
+            var updateDataAndXYAccessor = initChart();
+
+            d3.select(window).on('resize', initChart);
+
+            setTimeout(function () {
+                updateDataAndXYAccessor(data, 'date', 'value2');
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

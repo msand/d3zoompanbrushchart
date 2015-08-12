@@ -1,0 +1,41 @@
+{
+  "name": "d3zoompanbrushchart",
+  "description": "A minimal reusable chart with zoom, pan and brush for time series using d3.js",
+  "homepage": "http://msand.github.io/d3zoompanbrushchart",
+  "author": {
+    "name": "Mikael Sand",
+    "url": "http://github.com/msand"
+  },
+  "main": "d3zoompanbrushchart.js",
+  "scripts": [
+    "d3zoompanbrushchart.js"
+  ],
+  "keywords": [
+    "d3",
+    "visualization",
+    "svg",
+    "charts"
+  ],
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "d3": "^3.5.6"
+  },
+  "ignore": [
+    ".DS_Store",
+    ".git",
+    ".gitignore",
+    ".npmignore",
+    ".spmignore",
+    ".travis.yml",
+    "Makefile",
+    "bin",
+    "component.json",
+    "composer.json",
+    "index.js",
+    "lib",
+    "node_modules",
+    "package.json",
+    "src",
+    "test"
+  ]
+}

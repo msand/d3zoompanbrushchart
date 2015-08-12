@@ -1,0 +1,22 @@
+.d3zoompanbrushchart path {
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: none;
+}
+
+.d3zoompanbrushchart .axis path,
+.d3zoompanbrushchart .axis line {
+    shape-rendering: crispEdges;
+    stroke-opacity: 0.3;
+    stroke-width: 1;
+    stroke: grey;
+}
+
+.d3zoompanbrushchart svg {
+    pointer-events: all;
+}
+
+.d3zoompanbrushchart rect.extent {
+    fill-opacity: 0.2;
+    fill: grey;
+}

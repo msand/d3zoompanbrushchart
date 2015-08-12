@@ -1,0 +1,19 @@
+{
+  "name": "d3zoompanbrushchart",
+  "repository": "msand/d3zoompanbrushchart",
+  "description": "A minimal reusable chart with zoom, pan and brush for time series using d3.js",
+  "keywords": [
+    "dom",
+    "w3c",
+    "visualization",
+    "svg",
+    "animation",
+    "canvas"
+  ],
+  "version": "1.0.0",
+  "main": "d3zoompanbrushchart.js",
+  "scripts": [
+    "d3zoompanbrushchart.js"
+  ],
+  "license": "BSD-3-Clause"
+}

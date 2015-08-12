@@ -1,0 +1,58 @@
+{
+  "name": "d3zoompanbrushchart",
+  "version": "1.0.0",
+  "description": "A minimal reusable chart with zoom, pan and brush for time series using d3.js",
+  "keywords": [
+    "dom",
+    "w3c",
+    "visualization",
+    "svg",
+    "animation",
+    "canvas"
+  ],
+  "homepage": "http://msand.github.io/d3zoompanbrushchart",
+  "author": {
+    "name": "Mikael Sand",
+    "url": "http://github.com/msand"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/msand/d3zoompanbrushchart"
+  },
+  "main": "d3zoompanbrushchart.js",
+  "browserify": "d3zoompanbrushchart.js",
+  "jspm": {
+    "main": "d3zoompanbrushchart",
+    "shim": {
+      "d3": {
+        "exports": "d3zoompanbrushchart"
+      }
+    },
+    "files": [
+      "d3zoompanbrushchart.js"
+    ],
+    "buildConfig": {
+      "uglify": true
+    }
+  },
+  "jam": {
+    "main": "d3zoompanbrushchart.js",
+    "shim": {
+      "exports": "d3zoompanbrushchart"
+    }
+  },
+  "spm": {
+    "main": "d3zoompanbrushchart.js"
+  },
+  "devDependencies": {
+    "jsdom": "3",
+    "seedrandom": "2",
+    "smash": "0.0",
+    "uglify-js": "2.4.16",
+    "vows": "0.8"
+  },
+  "scripts": {
+    "test": "vows; echo"
+  },
+  "license": "BSD-3-Clause"
+}

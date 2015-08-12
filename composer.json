@@ -1,0 +1,26 @@
+{
+  "name": "msand/d3zoompanbrushchart",
+  "description": "A minimal reusable chart with zoom, pan and brush for time series using d3.js",
+  "keywords": [
+    "dom",
+    "w3c",
+    "visualization",
+    "svg",
+    "animation",
+    "canvas"
+  ],
+  "homepage": "http://msand.github.io/d3zoompanbrushchart",
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Mikael Sand",
+      "url": "http://github.com/msand"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/msand/d3zoompanbrushchart/issues",
+    "wiki": "https://github.com/msand/d3zoompanbrushchart/wiki",
+    "API": "https://github.com/msand/d3zoompanbrushchart/wiki/API-Reference",
+    "source": "https://github.com/msand/d3zoompanbrushchart"
+  }
+}

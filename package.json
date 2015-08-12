@@ -1,6 +1,6 @@
 {
   "name": "d3zoompanbrushchart",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A minimal reusable chart with zoom, pan and brush for time series using d3.js",
   "keywords": [
     "dom",
